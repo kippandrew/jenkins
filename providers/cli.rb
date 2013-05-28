@@ -58,7 +58,7 @@ def action_run
     command << " --password #{password}"
   end
   if password_file
-    command << " --password_file #{password_file}"
+    command << " --password-file #{password_file}"
   end
 
   je = jenkins_execute command do
